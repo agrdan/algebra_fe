@@ -1,7 +1,54 @@
 HTML
 
-Elements
 <!-- comment -->
-
 block elements - width of parent
+ <p>
+ <h>
+
 inline - width of content
+ - iz oblikovanja
+ - <span> - oblikovanje placeholder za rad s CSSom
+ 
+<h1>-<h6> - naslovi
+<p> - paragraf
+<hr> - horizontal line
+<br> - new line
+<pre> - unaprijed oblikovan tekst (tabovi, novi red, ...)
+
+atributi (sa i bez vrijednosti)
+ - lang="en"
+ - hidden (without value)
+ - title="title example"
+ - reversed (without value)
+
+metapodaci
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="ključne, riječi">
+<meta name="description" content="Opis sadržaja stranice">
+<meta name="author" content="Ime autora">
+<title>Meta elementi</title>
+
+oblikovanje
+<b> - bold
+<strong> - bold s vecom vaznosti
+<i> - italic
+<em> - italic s vecom vaznosti
+<mark> - oznacen zutom bojom (ko marker)
+<small> - smanjen tekst u liniji
+<del> - strikethrough
+<ins> - underline
+<sub> - smanjen i spusten od linije teksta
+<sup> - smanjen i podignut od linije teksta
+
+liste
+- redne (brojcane) - ordered list
+    <ol> - item <li>
+    atribut type="[1 | A | a | I | i]"
+    atribut start=[1-]
+    atribut value - set value on specific place and start from there again
+- simbolicka - unordered list
+    <ul> - item <li>
+- opisna lista - description list
+    <dl> - item <dt> stavka, <dd> opis
+

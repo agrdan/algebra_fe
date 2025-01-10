@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementi za objavljivanje teksta</title>
+</head>
+<body>
+    <!-- paragrafi, novi red, horizontalna linija, unaprijed oblikovan tekst -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem ab hic nihil vitae expedita fugiat possimus vero ipsum quo dolorum tempore aliquid deleniti, iusto temporibus quasi non libero eaque, nostrum cum. Voluptate dolorem consectetur voluptatibus laudantium, ducimus id. Sint dolores nostrum eligendi, non id eos nemo et temporibus repellat qui ratione iusto quod, numquam, <br>incidunt accusantium velit eveniet beatae harum maxime quia. Laudantium, consectetur neque amet voluptatibus odit accusantium cumque quaerat illo illum! Molestiae velit nihil adipisci commodi voluptas! Perferendis cumque sit laboriosam quae, animi necessitatibus, doloremque recusandae laborum molestiae placeat esse error magnam sint nihil molestias odio dolorem.</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem ab hic nihil vitae expedita fugiat possimus vero ipsum quo dolorum tempore aliquid deleniti, iusto temporibus quasi non libero eaque, nostrum cum. Voluptate dolorem consectetur voluptatibus laudantium, ducimus id. Sint dolores nostrum eligendi, non id eos nemo et temporibus repellat qui ratione iusto quod, numquam, incidunt accusantium velit eveniet beatae harum maxime quia. Laudantium, consectetur neque amet voluptatibus odit accusantium cumque quaerat illo illum! Molestiae velit nihil adipisci commodi voluptas! Perferendis cumque sit laboriosam quae, animi necessitatibus, doloremque recusandae laborum molestiae placeat esse error magnam sint nihil molestias odio dolorem.</p>
+
+     <hr>
+
+     <pre>
+        var gumbici = document.querySelectorAll("button:not(#jednako):not(#brisi)");
+			var jednako = document.getElementById("jednako");
+			var brisi = document.getElementById("brisi");
+			var prikaz = document.getElementById("prikaz");
+
+			gumbici.forEach(function(gumb){
+				gumb.addEventListener("click", function(){
+					prikaz.value += this.value;
+				});
+			});
+
+			jednako.addEventListener("click", function(){
+				// prikaz.value = eval(prikaz.value).toFixed(2);
+				prikaz.value = eval(prikaz.value);
+			});
+
+			brisi.addEventListener("click", function(){
+				prikaz.value = "";
+			});
+
+		}); 
+     </pre>
+</body>
+</html>
