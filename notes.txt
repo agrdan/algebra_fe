@@ -21,6 +21,8 @@ atributi (sa i bez vrijednosti)
  - title="title example"
  - reversed (without value)
 
+ _____________________________________________________________________________
+
 metapodaci
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,4 +53,22 @@ liste
     <ul> - item <li>
 - opisna lista - description list
     <dl> - item <dt> stavka, <dd> opis
+
+_____________________________________________________________________________
+grafika - page 44 materijali, slide 45 preza
+podjela
+ - nacin generiranja - vektor i raster
+ - datotecni format grafike
+
+ vektori - opisuju ih duljina i smjer
+
+ <img>
+ <picture> - media query ()
+    e.g.
+    <picture>
+        <source media="(min-width:1200px)">
+    </picture>
+
+nazivi file(folder) - koristiti "-" jer index tretira kao razmak
+
 
