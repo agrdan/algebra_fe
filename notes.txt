@@ -72,3 +72,10 @@ podjela
 nazivi file(folder) - koristiti "-" jer index tretira kao razmak
 
 
+svg - day 3 - svg
+canvas - day 4
+multimedia and links - day 5 - video, audio, iframe, documents
+
+object and embed (object je novije i preporuka za koristiti)
+
+
