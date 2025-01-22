@@ -9,11 +9,11 @@ inline - width of content
  - iz oblikovanja
  - <span> - oblikovanje placeholder za rad s CSSom
  
-<h1>-<h6> - naslovi
-<p> - paragraf
-<hr> - horizontal line
-<br> - new line
-<pre> - unaprijed oblikovan tekst (tabovi, novi red, ...)
+    <h1>-<h6> - naslovi
+    <p> - paragraf
+    <hr> - horizontal line
+    <br> - new line
+    <pre> - unaprijed oblikovan tekst (tabovi, novi red, ...)
 
 atributi (sa i bez vrijednosti)
  - lang="en"
@@ -22,37 +22,37 @@ atributi (sa i bez vrijednosti)
  - reversed (without value)
 
  _____________________________________________________________________________
+day 2
+    metapodaci
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ključne, riječi">
+    <meta name="description" content="Opis sadržaja stranice">
+    <meta name="author" content="Ime autora">
+    <title>Meta elementi</title>
 
-metapodaci
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="ključne, riječi">
-<meta name="description" content="Opis sadržaja stranice">
-<meta name="author" content="Ime autora">
-<title>Meta elementi</title>
+    oblikovanje
+    <b> - bold
+    <strong> - bold s vecom vaznosti
+    <i> - italic
+    <em> - italic s vecom vaznosti
+    <mark> - oznacen zutom bojom (ko marker)
+    <small> - smanjen tekst u liniji
+    <del> - strikethrough
+    <ins> - underline
+    <sub> - smanjen i spusten od linije teksta
+    <sup> - smanjen i podignut od linije teksta
 
-oblikovanje
-<b> - bold
-<strong> - bold s vecom vaznosti
-<i> - italic
-<em> - italic s vecom vaznosti
-<mark> - oznacen zutom bojom (ko marker)
-<small> - smanjen tekst u liniji
-<del> - strikethrough
-<ins> - underline
-<sub> - smanjen i spusten od linije teksta
-<sup> - smanjen i podignut od linije teksta
-
-liste
-- redne (brojcane) - ordered list
-    <ol> - item <li>
-    atribut type="[1 | A | a | I | i]"
-    atribut start=[1-]
-    atribut value - set value on specific place and start from there again
-- simbolicka - unordered list
-    <ul> - item <li>
-- opisna lista - description list
-    <dl> - item <dt> stavka, <dd> opis
+    liste
+    - redne (brojcane) - ordered list
+        <ol> - item <li>
+        atribut type="[1 | A | a | I | i]"
+        atribut start=[1-]
+        atribut value - set value on specific place and start from there again
+    - simbolicka - unordered list
+        <ul> - item <li>
+    - opisna lista - description list
+        <dl> - item <dt> stavka, <dd> opis
 
 _____________________________________________________________________________
 grafika - page 44 materijali, slide 45 preza
@@ -72,10 +72,28 @@ podjela
 nazivi file(folder) - koristiti "-" jer index tretira kao razmak
 
 
-svg - day 3 - svg
+svg - day 3
+ - svg (rect, circle, ellipse, line, polyline, path, polygon, text)
+ - img, picture (source), figure (figcaption)
 canvas - day 4
-multimedia and links - day 5 - video, audio, iframe, documents
+ - canvas, body(onload) atribut
+
+multimedia and links (video, audio, iframe, documents) - day 5
+ - video, audio, iframe, object
+ - header, main, footer, article, section, a
 
 object and embed (object je novije i preporuka za koristiti)
+
+
+<a> link 
+    atributi href target(_self, _blank) download
+vrste Poveznica
+ - vanjski, unutarnji, sidra, za pokretanje aplikacije (mailto:, tel:)
+
+
+ day 6 - 
+ navigacija web sjedista
+ table 
+- table, caption, thead, tbody, tfoot, tr, th, tbody, colgroup, col
 
 

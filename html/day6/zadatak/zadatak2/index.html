@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak - tablice</title>
+</head>
+<body>
+
+    <h1>Rad s tablicama</h1>
+    <hr>
+
+    <table border="1">
+        <caption>Naslov tablice</caption>
+        <thead>
+            <tr>
+                <th>red 1, celija 1</th>
+                <th>red 1, celija 2</th>
+                <th>red 1, celija 3</th>
+                <th>red 1, celija 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">red 2, celija 1</td>
+                <td>red 2, celija 2</td>
+                <td colspan="2">red 2, celija 3</td>
+            </tr>
+            <tr>
+                <td>red 3, celija 2</td>
+                <td>red 3, celija 3</td>
+                <td>red 3, celija 4</td>
+            </tr>
+            <tr>
+                <td>red 4, celija 2</td>
+                <td>red 4, celija 3</td>
+                <td>red 4, celija 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>red 5, celija 1</td>
+                <td>red 5, celija 2</td>
+                <td>red 5, celija 3</td>
+                <td>red 5, celija 4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Popis polaznika</caption>
+        <thead>
+            <tr>
+                <th>Redni broj</th>
+                <th>Ime i prezime</th>
+                <th>Adresa</th>
+                <th>Broj telefona</th>
+                <th>Email adresa</th>
+                <th>Ocjena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Pero Peric</td>
+                <td>Zagrebacka ulica 1, Varazdin</td>
+                <td>099/111 222</td>
+                <td>pero@test.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Ana Anic</td>
+                <td>Gajeva 1, Karlovac</td>
+                <td>099/222 333</td>
+                <td>ana@test.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Ivo Ivic</td>
+                <td>Jalkovecka ulica 1, Zagreb</td>
+                <td>099/333 444</td>
+                <td>ivo@test.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Tomo Tomic</td>
+                <td>Kozarceva ulica 1, Split</td>
+                <td>099/444 555</td>
+                <td>tomo@test.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Sara Saric</td>
+                <td>Supilova ulica 1, Rijeka</td>
+                <td>099/555 666</td>
+                <td>sara@test.com</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Prosjecna ocjena:</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
