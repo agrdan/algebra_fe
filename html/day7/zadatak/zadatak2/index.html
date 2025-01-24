@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava za posao - zadatak</title>
+</head>
+<body>
+
+    <h1>Prijava za posao</h1>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <p>
+            <label for="name_surname">Ime i prezime: *</label><br>
+            <input type="text" name="name_surname" id="name_surname" placeholder="Vase ime i prezime" required>
+        </p>
+        <p>
+            <label for="email">E-mail adresa:</label><br>
+            <input type="email" name="email" id="email" size="30">
+        </p>
+        <p>
+            <label for="contact_phone">Kontakt broj telefona: *</label><br>
+            <input type="tel" name="contact_phone" id="contact_phone" required>
+        </p>
+        <p>
+            <label for="web_address">Web adresa:</label><br>
+            <input type="url" name="web_address" id="web_address">
+        </p>
+        <p>
+            <span>Koje jezike govorite?</span><br>
+            <label for="lang_en">Engleski</label>
+            <input type="checkbox" name="lang_en" id="lang_en" value="EN">
+            <label for="lang_it">Talijanski</label>
+            <input type="checkbox" name="lang_it" id="lang_it" value="IT">
+            <label for="lang_de">Njemački</label>
+            <input type="checkbox" name="lang_de" id="lang_de" value="DE">
+            <label for="lang_fr">Francuski</label>
+            <input type="checkbox" name="lang_fr" id="lang_fr" value="FR">
+            <label for="lang_es">Španjolski</label>
+            <input type="checkbox" name="lang_es" id="lang_es" value="ES">
+        </p>
+        <p>
+            <span>Da li ste do sada koristili usluge nase tvrtke?</span><br>
+            <label for="rb_yes">Da</label>
+            <input type="radio" name="company_services_radiogroup" id="rb_yes" value="Y">
+            <label for="rb_no">Ne</label>
+            <input type="radio" name="company_services_radiogroup" id="rb_no" value="N">
+        </p>
+        <p>
+            <label for="cv">Priložite životopis: *</label><br>
+            <input type="file" name="cv" id="cv" multiple required>
+        </p>
+        <p>
+            <label for="ta_additional_commnet">Dodatan komentar:</label><br>
+            <textarea name="ta_additional_commnet" id="ta_additional_commnet" rows="8" cols="30"></textarea>
+        </p>
+        <p>
+            <button type="reset">Poništi</button>
+            <button type="submit">Prijavi se</button>
+        </p>
+
+
+
+    </form>
+    
+    
+</body>
+</html>

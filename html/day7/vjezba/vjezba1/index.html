@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML obrasci</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML obrasci</h1>
+    </header>
+
+    <main>
+
+        <form action="app/registracija.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Registracija</legend>
+
+                <p>
+                    <label for="korisnicko-ime">Korisnicko ime:</label><br>
+                    <input type="text" name="korisnicko-ime" id="korisnicko-ime" autofocus placeholder="Korisnicko ime" required pattern="[A-Za-z0-9]{3,10}" title="Unesite 3-10 alfanumerickih znakova">
+                </p>
+                <p>
+                    <label for="loznika">Lozinka:</label><br>
+                    <input type="password" name="loznika" id="loznika" required placeholder="Loznika">
+                </p>
+                <br><br>
+
+                <label>Spol:</label><br>
+                <label for="m">Male</label>
+                <input type="radio" name="spol" id="m" value="male" required>
+                <label for="fm">Female</label>
+                <input type="radio" name="spol" id="fm" value="female" required>
+
+                <p>
+                    <label for="fotografija">Vasa fotografija</label><br>
+                    <input type="file" name="fotografija" id="fotografija" multiple accept=".jpg, .png, .webp">
+                </p>
+
+                <br><br>
+
+                <label for="ss">Strucna sprema</label><br>
+                <select name="ss" id="ss">
+                    <option value="1">NSS</option>
+                    <option value="2" selected>SSS</option>
+                    <option value="3">VŠS</option>
+                    <option value="4">VSS</option>
+                    <!-- <option disabled hidden selected>Odaberite nešto</option> -->
+                </select>
+
+                <br><br>
+
+                <label for="mjesto">Mjesto rodenja:</label><br>
+                <input type="text" name="mjesto" id="mjesto" list="lista-gradova">
+                <datalist id="lista-gradova">
+                    <option value="Varazdin" />
+                    <option value="Vukovar" />
+                    <option value="Zagreb" />
+                    <option value="Zadar" />
+                </datalist>
+                <br><br>
+
+                <label for="pitanje">Zasto ste odabrali nas?</label><br>
+                <textarea name="pitanje" id="pitanje" rows="6" cols="24"></textarea>
+
+                <br><br>
+
+                <label for="boja">Koja vam je omiljena boja?</label><br>
+                <input type="color" name="boja" id="boja">
+
+                <br><br>
+
+                <label for="datum">Datum rodenja</label><br>
+                <input type="date" name="datum" id="datum" required min="2000-01-01">
+
+                <br><br>
+
+                <label for="e-adresa">Email adresa:</label>
+                <input type="email" name="e-adresa" id="e-adresa" size="30">
+
+                <br><br>
+
+                <label for="br-razreda">Broj zavrsenih razreda srednje skole:</label><br>
+                <input type="number" name="br-razreda" id="br-razreda" min="0" max="4" value="0">
+                <!-- step="0.2" -->
+
+                <br><br>
+                <!-- <input type="submit" value="U redu"> -->
+                 <button type="submit">U redu</button>
+                 <button type="submit" formnovalidate>Predaj bez validacije</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

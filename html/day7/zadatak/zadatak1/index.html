@@ -1,0 +1,66 @@
+¨<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme - zadatak</title>
+</head>
+<body>
+
+    <form action="app/prijava-korisnika.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Prijava na tecaj</legend>
+
+            <p>
+                <label for="name_surname">* Ime i prezime:</label><br>
+                <input type="text" name="name_surname" id="name_surname" autofocus required>
+            </p>
+            <p>
+                <label for="month_and_year_birth">* Mjesec i godina rodenja:</label><br>
+                <input type="month" name="month_and_year_birth" id="month_and_year_birth" min="2000-09" required>
+            </p>
+            <p>
+                <label for="sex">* Spol:</label><br>
+                <input type="text" name="sex" id="sex" list="list-sex" required>
+                <datalist id="list-sex">
+                    <option value="male"/>
+                    <option value="female"/>
+                </datalist>
+            </p>
+            <p>
+                <label for="selected_documentation">Dokumentacija</label><br>
+                <input type="file" name="selected_documentation" id="selected_documentation" multiple>
+            </p>
+            <p>
+                <label>Zelim upisati:</label><br>
+                
+                <input type="checkbox" name="cb_fe" id="cb_fe" value="FE">
+                <label for="cb_fe">Front-End Developer</label><br>
+                
+                <input type="checkbox" name="cb_be" id="cb_be" value="BE">
+                <label for="cb_be">Back-End Developer</label><br>
+                
+                <input type="checkbox" name="cb_cisco" id="cb_cisco" value="CISCO">
+                <label for="cb_cisco">CISCO</label>
+            </p>
+            <p>
+                <label for="email">Vasa E-mail adresa:</label><br>
+                <input type="email" name="email" id="email" placeholder="simple@example.com">
+            </p>
+            <p>
+                <label for="high_school_levels">* Broj zavrsenih razreda srednje skole:</label><br>
+                <input type="number" name="high_school_levels" id="high_school_levels" min="0" max="4" required value="4">
+            </p>
+            <p>
+                <label for="time_of_registration">* Vrijeme registracije:</label><br>
+                <input type="time" name="time_of_registration" id="time_of_registration" required>
+            </p>
+            <p>
+                <button type="submit">U redu</button>
+            </p>
+        
+        </fieldset>
+    </form>
+    
+</body>
+</html>
