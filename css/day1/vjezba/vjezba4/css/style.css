@@ -1,0 +1,29 @@
+:root {
+    /* globalni doseg */
+    --primary-color: blue;
+    --secondary-color: green;
+}
+
+h1 {
+    color: var(--primary-color, #d3d3d3);
+}
+
+h2 {
+    color: var(--secondary-color, orange);
+}
+
+h3 {
+    color: var(--secondary-color);
+    text-decoration: underline solid var(--primary-color);
+}
+
+p {
+    /* lokalni doseg */
+    --paragraph-color: #f93;
+    --paragraph-color2: blue;
+    background-color: var(--paragraph-color);
+}
+
+strong {
+    text-decoration: underline solid var(--paragraph-color2);
+}

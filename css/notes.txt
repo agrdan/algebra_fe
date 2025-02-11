@@ -1,0 +1,40 @@
+CSS - izgled i dizajn
+
+------v-----------------> deklaracijski blok
+selektor {
+    svojstvo: vrijednost; -> deklaracija
+}
+
+varijable 
+
+:root { globalne --naziv-varijable: ...}
+
+svojstva:
+    color: #fff, rgb(255, 255, 255), var(--naziv-varijable)
+
+    text-decoration:
+        font-family: "Times New Roman"
+        @font-face { -> definicija novog jezika
+            font-family: proizvoljni-naziv;
+            src: url(urlToFont)
+        }
+        font-family: <link href="url" rel="stylesheet"> - Charm, cursive;
+        font-size: 24px, 150%, 1.2em, vw
+        font-style: normal, italic
+        font-weight (100-900) 400 normal, 700 bold
+        font-variant: normal, small-caps
+        line-height
+        font: font-style font-variant font-weight font-size/line-hight font-family;
+        color: 
+        text-align:
+        text-decoration: none, underline, overline, solid...
+        text-transform: none, uppercase, capitalize, lowercase
+        text-shadow: (horizontalni pomak, vertikalni pomak, radijus zamucenja, boja sjene)
+        text-indent: px, %
+        word-spacing: normal, duljina px, %
+        letter-spacing: ^
+        vertical-align: baseline, sub, super, duljina ^
+        word-wrap: normal, breakdown
+
+    link for shadows
+    https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ 

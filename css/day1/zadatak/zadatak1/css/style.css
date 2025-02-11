@@ -1,0 +1,7 @@
+:root {
+    --primary-h4: rgb(200, 22, 157);
+}
+
+h4 {
+    color: var(--primary-h4);
+}
