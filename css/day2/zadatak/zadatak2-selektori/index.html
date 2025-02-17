@@ -22,28 +22,28 @@
             letter-spacing: 3px;
         }
 
-        article a {
+        #sadrzaj article a {
             color: green;
             font-size: 24px;
             background-color: black;
         }
 
-        article a:visited {
+        #sadrzaj article a:visited {
             text-decoration: line-through yellow solid;
             text-transform: lowercase;
             font-style: italic;
             color: purple;
         }
 
-        article a:hover {
+        #sadrzaj article a:hover {
             color: red;
         }
 
-        article a:active {
+        #sadrzaj article a:active {
             color: white;
         }
 
-        article a:focus {
+        #sadrzaj article a:focus {
             background-color: grey;
         }
 
@@ -65,8 +65,53 @@
             color:blueviolet
         }
 
-        
+        article p:first-of-type {
+            text-align: justify;
+        }
 
+        article p:last-of-type {
+            text-align: right;
+        }
+
+        figure figcaption {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #footer-header {
+            font-style: italic;
+            font-size: 2.2em;
+            color: #d3d3d3
+        }
+
+        form label {
+            color: red;
+            text-decoration: underline solid red;
+            font-variant: small-caps;
+        }
+        
+        button {
+            background-color: transparent;
+            color: blue;
+            border: 1px solid black;
+        }
+
+        #o-nama-1, #o-nama-2, #o-nama-3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(0, 255, 72);
+            background-color: black;
+        }
+
+        #podnozje p:first-of-type {
+            font-variant: small-caps;
+            font-size: 18px;
+            color: orangered;
+            text-align: center;
+        }
+
+        #podnozje a {
+            color: aqua;
+        }
     </style>
 </head>
 <body>
@@ -177,7 +222,7 @@
         </aside>
     </main>
     <footer>
-        <h2>Zašto je Algebra siguran izbor za tvoju budućnost?</h2>
+        <h2 id="footer-header">Zašto je Algebra siguran izbor za tvoju budućnost?</h2>
         <div id="o-nama-1">
             <h4>Vjetar u leđa</h4>
             <p>

@@ -38,3 +38,6 @@ svojstva:
 
     link for shadows
     https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ 
+
+
+    
