@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #d3d3d3;
+
+    background-color: grey;
+    background-image: url("../slike/pattern.png"), url("../slike/fire.png"), url("../slike/blossom.jpg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-position: left top, center 45%, center top;
+    background-attachment: scroll, fixed, fixed;
+    background-size: auto, 15%, cover;
+}
+
+h1 {
+    background-color: grey;
+}

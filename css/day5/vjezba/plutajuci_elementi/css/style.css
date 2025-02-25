@@ -1,0 +1,49 @@
+body {
+    font-size: 18px;
+}
+
+/* plutajuci elementi */
+/* #plutajuci {
+    float: left;
+    margin: 12px;
+}
+
+#plutajuci + p {
+    clear: both;
+} */
+
+/* izrada layouta stranice pomocu plutajucih elemenata */
+.red {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.red article {
+    background-color: #f2f2f2;
+    border: 2px solid grey;
+}
+
+[class*="kolona"] {
+    float: left;
+    box-sizing: border-box;
+}
+
+.d-kolona-1 {width: 8.33%;}
+.d-kolona-2 {width: 16.66%;}
+.d-kolona-3 {width: 25%;}
+.d-kolona-4 {width: 33.33%;}
+.d-kolona-5 {width: 41.66%;}
+.d-kolona-6 {width: 50%;}
+.d-kolona-7 {width: 58.33%;}
+.d-kolona-8 {width: 66.66%;}
+.d-kolona-9 {width: 75%;}
+.d-kolona-10 {width: 83.33%;}
+.d-kolona-11 {width: 91.66%;}
+.d-kolona-12 {width: 100%;} 
+
+/* varacmo visinu roditelju */
+.red::after {
+    content: "";
+    clear: both;
+    display: block;
+}

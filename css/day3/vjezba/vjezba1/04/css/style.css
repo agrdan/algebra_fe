@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+p:first-of-type {
+    background: linear-gradient(to right, red, green, blue);
+    /* background: linear-gradient(90deg, red, green, blue); */
+    /* background: repeating-linear-gradient(90deg, red, green 10%, blue 20%, red 30%); */
+    /* background: linear-gradient(to right, red 0 10%, green 10% 20%, blue 20%); */
+    
+    /* slika s gradijentom */
+    /* background: url("../slike/light-bulb.png") no-repeat center center/contain, linear-gradient(to right, red, green, blue);; */
+}
+
+p:nth-of-type(2) {
+    background: radial-gradient(circle closest-corner at 75% 25%, red, blue);
+    /* background: repeating-radial-gradient(circle closest-corner at 75% 25%, red, blue 20%, red 30%); */
+    /* background: radial-gradient(circle closest-corner at 75% 25% ,red, blue, transparent 20%); */
+}
+
+p:nth-of-type(3) {
+    background: radial-gradient(at 75% 25%, rgba(155, 125, 0, 1), rgba(155, 125, 0, 0));
+}
+
+p:nth-of-type(4) {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: conic-gradient(red, blue, green);
+    /* background: conic-gradient(from 90deg at 40% 25%, red, blue, green); */
+    /* background: repeating-conic-gradient(red 10deg, blue 20deg, green 30deg); */
+}
+
+p:last-of-type {
+    font-size: 32px;
+    background: linear-gradient(261deg, #c40f61, #e27210);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

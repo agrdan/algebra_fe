@@ -1,0 +1,117 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    background-color: aqua;
+}
+
+/* ---------- width ----------- */
+.width1 {
+    width: 50%;
+}
+
+.width2 {
+    width: 500px;
+}
+
+.width3 {
+    font-size: 20px;
+    width: 20em;
+}
+
+/* ---------- height ----------- */
+.height1 {
+    height: 50%;
+
+}
+
+.height2 {
+    height: 150px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.height3 {
+    font-size: 20px;
+    height: 5em;
+}
+
+/* ---------- box-sizing ----------- */
+.width-height {
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.clear {
+    background-color: transparent;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ---------- border ----------- */
+.border1 {
+    border: 4px groove silver;
+}
+
+.border2 {
+    border-top: 4px dashed red;
+    border-right: 4px solid green;
+    border-left: 4px double blue;
+    border-bottom: 4px dotted yellow;
+
+    /* padding: 10px;
+    background-clip: content-box; */
+}
+
+/* ---------- padding ----------- */
+.padding1 {
+    /* padding: 20px; */
+    padding: 5%;
+}
+
+.padding2 {
+    /* padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 45px;
+    padding-left: 65px; */
+
+    /* kraci zapis */
+    padding: 5px 15px 45px 65px;
+}
+
+/* ---------- margin ----------- */
+.margin1 {
+    margin: 20px;
+}
+
+.margin2 {
+    /* margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    margin-left: 100px; */
+
+    margin: 20px 50px 80px 100px;
+}
+
+.margin-auto {
+    /* margin: auto; */
+    /* margin: 20px auto; */
+    margin-left: auto;
+}

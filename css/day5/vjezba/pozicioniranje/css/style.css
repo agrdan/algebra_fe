@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #333;
+}
+
+/* unaprijed je zadano staticno pozicioniranje (pomaci nemaju efekta) */
+/* #pomak {
+    top: 200px;
+    left: 300px;
+} */
+
+
+/* relativno pozicioniranje */
+/* #pomak {
+    position: relative;
+    left: 80px;
+    top: 100px;
+} */
+
+/* apsolutno pozicioniranje */
+/* #roditelj {
+    border: 2px solid black;
+    position: relative;
+}
+
+#pomak {
+    position: absolute;
+    top: 200;
+    right: 0;
+} */
+
+/* fiksno pozicioniranje */
+/* #pomak {
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+/* ljepljivo pozicioniranje */
+/* #pomak {
+    position: sticky;
+    top: 0;
+} */
+
+/* preklapanje elemenata */
+#pomak {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+p {
+    position: relative;
+    z-index: 2;
+}

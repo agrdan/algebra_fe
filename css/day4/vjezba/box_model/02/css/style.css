@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ddd;
+    margin: 0;
+}
+
+#slike img {
+    width: 25%;
+    padding: 20px;
+    border: 3px solid #999;
+    margin: 1em;
+    background-color: #333;
+}
+
+#slika img {
+    width: 400px;
+    /* margin: auto;
+    display: block; */
+}
+
+#slika {
+    text-align: right;
+}

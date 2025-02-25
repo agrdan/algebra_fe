@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	border: 1px dashed #666;
+	padding: 1em;
+}
+
+.wrapper div {
+	background: #eee;
+	border: 1px solid #666;
+	padding: 1em;
+	text-align: center;
+	width: 150px;
+	margin: 1em;
+}
+
+/* 1. korak: definicija fleksibilnog spremnika */
+.flex-container {
+	display: flex;
+}
+
+/* smjer glave osi (smjer u kojem se postave fleksibilni elementi) */
+/* .flex-container {
+	flex-direction: column;
+} */
+
+/* da li ce fleksibilni elementi biti postavljeni u jedan ili vise redova / stupaca */
+/* .flex-container {
+	width: 600px;
+	flex-wrap: wrap;
+} */
+
+/* kraci zapis za prethodna dva svojstva */
+/* .flex-container {
+	width: 600px;
+	flex-flow: row-reverse wrap;
+} */
+
+/* poravnanje fleksibilnih elemenata po glavnoj osi te respodjela slobodnog prostora */
+/* .flex-container {
+	justify-content: space-around;
+} */
+
+/* poravnanje fleksibilnih elemenata prema poprecnoj osi (poravnanje unutar flex linije) */
+/* .flex-container {
+	height: 600px;
+	align-items: flex-start;
+} */
+
+/* poravnanje fleksibilnih linija prema poprecnoj osi (efekta ce biti samo ako su elementi rasporedeni u vise redova / stupaca) */
+/* .flex-container {
+	width: 600px;
+	height: 600px;
+	flex-wrap: wrap;
+	align-content: space-around;
+} */
+
+
+
+
+
+
+
+
+/* redosljed prikaza fleksibilnih elemenata prema glavnoj osi default => 0 */
+/* .flex-item:nth-child(3) {
+	order: -1;
+} */
+
+/* za koliko se fleksibilni element moze uvecati po glavnoj osi => default 0 */
+/* .flex-item {
+	flex-grow: 1;
+}
+
+.flex-item:nth-child(3) {
+	flex-grow: 2;
+} */
+
+/* za koliko se fleksibilni element moze smanjiti po glavnoj osi => default 1 */
+/* .flex-item {
+	flex-shrink: 1;
+}
+
+.flex-item:nth-child(3) {
+	flex-shrink: 3;
+} */
+
+/* pocetne dimenzije fleksibilnog elementa prema glavnoj osi */
+/* .flex-item:nth-child(3) {
+	flex-basis: 600px;
+} */
+
+/* kraci zapis za prethodna tri svojstva */
+/* .flex-item:nth-child(3) {
+	flex: 0 1 600px;
+} */
+
+
+/* poravnavanje zadanog fleksibilnog elementa prema poprecnoj osi */
+.flex-container {
+	height: 600px;
+	align-items: center;
+}
+
+.flex-item:nth-child(3) {
+	align-self: flex-end;
+}

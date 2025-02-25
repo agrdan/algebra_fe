@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+p:first-of-type {
+    background: rgba(255, 0, 0, 0.2) url("../slike/light-bulb.png") no-repeat center center/contain;
+}
+
+p:nth-of-type(2) {
+    /* background: 
+        url("../slike/orange.png") no-repeat right top/150px,
+        url("../slike/butterfly.png") no-repeat left center/contain,
+        url("../slike/coffee-cup.png") no-repeat center center/contain,
+        #ccf url("../slike/pattern.png"); */
+
+    /* dulji zapis */
+    background-color: #ccf;
+    background-image: url("../slike/orange.png"), url("../slike/butterfly.png"), url("../slike/coffee-cup.png"), url("../slike/pattern.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    background-position: right top, left center, center center, left top;
+    background-size: 150px, contain, contain, auto;
+    /* background-blend-mode: overlay; */
+}

@@ -1,0 +1,10 @@
+img {
+    display: block;
+    width: 25%;
+    height: auto;
+    border: 2px solid black;
+    margin: 1em auto;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}

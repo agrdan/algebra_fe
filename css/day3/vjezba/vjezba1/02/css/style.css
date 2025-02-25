@@ -1,0 +1,15 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+
+    /* background-color: #ddd;
+    background-image: url("../slike/butterfly.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25%; 
+    background-attachment: fixed; */
+
+    /* kraci zapis */
+    background: #ddd url(../slike/butterfly.png) no-repeat center center/25% fixed ;
+}
