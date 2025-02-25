@@ -40,4 +40,9 @@ svojstva:
     https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ 
 
 
-    
+    position:
+        static - nije moguce preklapanje
+        fixed 
+        relative
+        absolute
+        flex

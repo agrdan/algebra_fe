@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer, main, nav, article, aside, section, div {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+/* 
+
+header:first-of-type {
+    display: flex;
+}
+
+#logo {
+    flex-basis: 33.33%;
+}
+
+#navigacija {
+    flex-basis: 66.66%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main header {
+    flex-basis: 100%;
+}
+
+#sadrzaj {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+#sporedni-sadrzaj {
+    flex-basis: 30%;
+}
+
+footer:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#o-nama-1, #o-nama-2, #o-nama-3 {
+    flex-basis: 33.33%;
+}
+
+#podnozje {
+    flex-basis: 100%;
+} */
+
+.red {
+    display: flex;
+}
+
+.red:nth-child(2), .red:nth-child(3) {
+    flex-wrap: wrap;
+}
+
+.d-kolona-1 {flex-basis: 8.33%;}
+.d-kolona-2 {flex-basis: 16.66%;}
+.d-kolona-3 {flex-basis: 25%;}
+.d-kolona-4 {flex-basis: 33.33%;}
+.d-kolona-5 {flex-basis: 41.66%;}
+.d-kolona-6 {flex-basis: 50%;}
+.d-kolona-7 {flex-basis: 58.33%;}
+.d-kolona-8 {flex-basis: 66.66%;}
+.d-kolona-9 {flex-basis: 75%;}
+.d-kolona-10 {flex-basis: 83.33%;}
+.d-kolona-11 {flex-basis: 91.66%;}
+.d-kolona-12 {flex-basis: 100%;}
