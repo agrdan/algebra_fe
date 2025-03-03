@@ -82,39 +82,64 @@ h1 {
 }
 
 @keyframes animacija4 {
-  50% {
-      transform: translate(1000px);
-  }
+	0% {
+		top: 0;
+	}
+	50% {
+		top: 2vh;
+	}
+	100% {
+		top: 0;
+	}
 }
 
-div:nth-of-type(4) {
-  animation: animacija4 2s linear 2 ;
+.wrapper div:nth-of-type(4) {
+	animation: animacija4 1s linear infinite;
+}
+
+.wrapper div:nth-of-type(4):hover {
+	animation-play-state: paused;
 }
 
 @keyframes animacija5 {
-  0% {
-      left: 0
-  }
-  100% {
-      left: 80%
-  }
+	0% {
+		top: 0;
+	}
+	25% {
+		top: 80vh;
+		transform: rotate(0deg);
+		background-color: #f93;
+	}
+	50% {
+		top: 80vh;
+		transform: rotate(360deg);
+		background-color: red;
+	}
+	75% {
+		transform: rotate(0deg);
+		background-color: #f93;
+	}
+	100% {
+		transform: rotate(0deg);
+		top: 0;
+	}
 }
 
-div:nth-of-type(5) {
-  animation: animacija5 4s ease-in 2 alternate;
+.wrapper div:nth-of-type(5) {
+  animation: animacija5 4s ease-in infinite;
 }
 
 @keyframes animacija6 {
   0% {
-      left: 0;
+      top: 0;
       background-color: red;
   }
   100% {
-      left: 80%
+      top: 80%
   }
 }
 
-div:nth-of-type(6) {
+.wrapper div:nth-of-type(6) {
   animation: animacija6 2s ease-out 2s forwards;
 }
 
@@ -128,4 +153,8 @@ div:nth-of-type(6) {
   100% {
       left: 0;
   }
-} */
+}
+
+.wrapper div:nth-of-type(7) {
+  animation: animacija6 2s ease-out 2s forwards;
+}

@@ -1,0 +1,197 @@
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+#zaglavlje {
+	height: 600px;
+	background: url("../slike/stari-grad.jpg") no-repeat fixed center center/cover;
+	color:white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#zaglavlje h1 {
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	margin: 0;
+	font-size: 90px;
+}
+
+#navigacija {
+	padding: 10px;
+}
+
+#navigacija ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigacija ul li {
+	padding: 8px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	color: #ffffff;
+	text-align: left;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#navigacija ul li:hover {
+	background-color: #0099cc;
+}
+
+#navigacija ul li a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color:#ffffff;
+}
+
+#sadrzaj {
+	padding: 10px;
+}
+
+#sadrzaj iframe {
+	display: block;
+	margin: auto;
+}
+
+#galerija img {
+	width: 100%;
+}
+
+#galerija {
+	column-count: 3;
+	column-gap: 5px;
+}
+
+#baner {
+	background-color: #33b5e5;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#podnozje {
+	background-color: #33b5e5;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 10px;
+	margin-top: 20px;
+}
+
+/* layout */
+
+* {
+	box-sizing: border-box;
+}
+
+.red {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* desktop */
+.d-kolona-1 {flex-basis: 8.33%;}
+.d-kolona-2 {flex-basis: 16.66%;}
+.d-kolona-3 {flex-basis: 25%;}
+.d-kolona-4 {flex-basis: 33.33%;}
+.d-kolona-5 {flex-basis: 41.66%;}
+.d-kolona-6 {flex-basis: 50%;}
+.d-kolona-7 {flex-basis: 58.33%;}
+.d-kolona-8 {flex-basis: 66.66%;}
+.d-kolona-9 {flex-basis: 75%;}
+.d-kolona-10 {flex-basis: 83.33%;}
+.d-kolona-11 {flex-basis: 91.66%;}
+.d-kolona-12 {flex-basis: 100%;}
+
+
+@media (max-width:1023px) {
+	.t-kolona-1 {flex-basis: 8.33%;}
+	.t-kolona-2 {flex-basis: 16.66%;}
+	.t-kolona-3 {flex-basis: 25%;}
+	.t-kolona-4 {flex-basis: 33.33%;}
+	.t-kolona-5 {flex-basis: 41.66%;}
+	.t-kolona-6 {flex-basis: 50%;}
+	.t-kolona-7 {flex-basis: 58.33%;}
+	.t-kolona-8 {flex-basis: 66.66%;}
+	.t-kolona-9 {flex-basis: 75%;}
+	.t-kolona-10 {flex-basis: 83.33%;}
+	.t-kolona-11 {flex-basis: 91.66%;}
+	.t-kolona-12 {flex-basis: 100%;}
+
+	.red {
+		flex-wrap: wrap;
+	}
+
+	#zaglavlje {
+		background: url("../slike/stari-grad-mala.jpg") no-repeat fixed center center/cover;
+	}
+
+	#galerija {
+		column-count: 2;
+	}
+	
+}
+
+
+@media (max-width:767px) {
+	.m-kolona-1 {flex-basis: 8.33%;}
+	.m-kolona-2 {flex-basis: 16.66%;}
+	.m-kolona-3 {flex-basis: 25%;}
+	.m-kolona-4 {flex-basis: 33.33%;}
+	.m-kolona-5 {flex-basis: 41.66%;}
+	.m-kolona-6 {flex-basis: 50%;}
+	.m-kolona-7 {flex-basis: 58.33%;}
+	.m-kolona-8 {flex-basis: 66.66%;}
+	.m-kolona-9 {flex-basis: 75%;}
+	.m-kolona-10 {flex-basis: 83.33%;}
+	.m-kolona-11 {flex-basis: 91.66%;}
+	.m-kolona-12 {flex-basis: 100%;}
+
+	#galerija {
+		column-count: 1;
+	}
+
+	#zaglavlje h1 {
+		font-size: 60px;
+	}
+
+	#navigacija ul li {
+		text-align: center;
+	}
+
+	#sadrzaj figure {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+
+
+
+

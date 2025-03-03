@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body *{
+    padding: 10px;
+}
+
+header, footer{
+    background-color: #999;
+    height: 10vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+section {
+    flex-basis: 24%;
+    background-color: #eee;
+}
+
+/* Responzivnost */
+/* sirina viewporta manja ili jednaka 1023px (tablet) */
+@media (max-width: 1023px) {
+    main {
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    section {
+        flex-basis: 48%;
+        height: 48%;
+    }
+}
+
+/* sirina viewporta manja od 767px (mobile) */
+@media (max-width: 767px) {
+    section {
+        flex-basis: 100%;
+        height: 24%;
+    }
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body *{
+    padding: 10px;
+}
+
+header, footer{
+    background-color: #999;
+    height: 10vh;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 80vh;
+}
+
+section{
+    flex-basis: 100%;
+    height: 24%;
+    background-color: #eee;
+}
+
+
+/* responzivnost */
+/* sirina viewporta veca ili jednaka 768px (tablet) */
+@media (min-width:768px) {
+    section {
+        flex-basis: 49%;
+        height: 48%;
+    }   
+}
+
+
+@media (min-width:1024px) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    section {
+        flex-basis: 24%;
+        height: 100%;
+    }
+}
+
+
+
