@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+.menu {
+  margin: 1em;
+  padding: 1em;
+  background-color: #eee;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+}
+ul a {
+  margin: 0;
+  padding: 5px 2em;
+  color: rgba(255, 153, 51, 0.75);
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+ul a:visited {
+  color: rgba(136, 0, 0, 0.75);
+}
+ul a:hover {
+  color: #333;
+}
+ul a:active {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

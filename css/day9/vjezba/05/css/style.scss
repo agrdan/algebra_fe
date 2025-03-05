@@ -1,0 +1,23 @@
+@import "base/reset";
+@import "base/color";
+@import "base/typography";
+@import "abstracts/mixins";
+
+body {
+    color: $color-2;
+    font-family: $sans-serif;
+}
+
+.menu {
+    @include spacing(1em, 1em);
+    background-color: $color-1;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        display: inline;
+    }
+    @include link($color-4, $color-3, $color-2, red);
+}
+

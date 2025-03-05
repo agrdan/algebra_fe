@@ -1,0 +1,88 @@
+$color-1: #eee;
+$color-2: #252222;
+$color-3: #ca1d1d;
+$color-4: #e5ff00;
+$color-5: #b5eea6;
+
+$font-1: Tahoma, sans-serif;
+$font-2: Courier, monospace;
+
+// mixin
+@mixin flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin a-button {
+    a {
+        background-color: $color-5;
+        color: $color-4;
+        display: inline-block;
+        padding: 10px;
+        margin: 1em;
+        &:visited {
+            background-color: aquamarine;
+        }
+        &:hover {
+            background-color: $color-2;
+        }
+    }
+}
+
+// mixin - arguments
+@mixin align-element($display, $txt, $space) {
+    display: $display;
+    text-align: $txt;
+    margin: $space;
+}
+
+body {
+    background-color: $color-5;
+    color: $color-3;
+    font-family: $font-1;
+}
+
+header {
+    a {
+        @include align-element(block, center, 1em auto);
+        background-color: $color-4;
+        color: $color-2;
+        padding: 10px;
+        width: 300px;
+    }
+}
+
+section {
+    @include flex-container();
+    background-color: $color-1;
+    padding: 1em;
+    article {
+        flex-basis: 48%;
+        background-color: $color-2;
+        a {
+            @include align-element(inline-block, right, 1em 50px);
+        }
+    }
+}
+
+footer {
+    @include a-button();
+}
+
+// extend
+.borders {
+    border: 2px solid $color-2;
+}
+
+// placeholder selectors
+%spaces {
+    padding: 1em;
+    margin: 1em;
+}
+
+header, footer {
+    @extend .borders;
+    @extend %spaces;
+    background-color: white;
+}

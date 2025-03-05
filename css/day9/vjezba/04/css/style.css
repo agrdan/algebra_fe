@@ -1,0 +1,75 @@
+body {
+  background-color: #c55353;
+}
+
+.stavka-1 {
+  width: 100px;
+}
+
+.stavka-2 {
+  width: 200px;
+}
+
+.stavka-3 {
+  width: 300px;
+}
+
+.stavka-4 {
+  width: 400px;
+}
+
+.stavka-5 {
+  width: 500px;
+}
+
+li {
+  background-color: #333;
+}
+li a {
+  color: red;
+}
+
+.stavka-1::after {
+  content: " 1";
+  color: greenyellow;
+}
+
+.stavka-2::after {
+  content: " 2";
+  color: greenyellow;
+}
+
+.stavka-3::after {
+  content: " 3";
+  color: greenyellow;
+}
+
+.stavka-4::after {
+  content: " 4";
+  color: greenyellow;
+}
+
+.stavka-5::after {
+  content: " 5";
+  color: greenyellow;
+}
+
+.slika-ana {
+  background-image: url("slike/ana.jpg");
+}
+
+.slika-pero {
+  background-image: url("slike/pero.jpg");
+}
+
+.slika-ivo {
+  background-image: url("slike/ivo.jpg");
+}
+
+.slika-tomo {
+  background-image: url("slike/tomo.jpg");
+}
+
+.slika-martina {
+  background-image: url("slike/martina.jpg");
+}/*# sourceMappingURL=style.css.map */

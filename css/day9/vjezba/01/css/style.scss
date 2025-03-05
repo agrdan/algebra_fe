@@ -1,0 +1,68 @@
+// variables
+$color-1: #eee;
+$color-2: #c3c3c3;
+$color-3: #333;
+$color-4: #3333;
+$color-5: #a5d299;
+
+$font-1: Tahoma, sans-serif;
+$font-2: Courier, monospace;
+
+body {
+    background-color: $color-1;
+    color: $color-3;
+    font-family: $font-1;
+}
+
+a {
+    font-family: $font-2;
+}
+
+article {
+    border: 2px solid $color-4;
+    margin: 1em;
+}
+
+// nested rules
+header {
+    text-align: center;
+    h1 {
+        color: $color-3;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        color: rgb(200, 15, 56);
+    }
+}
+
+section {
+    h1 {
+        font-family: $font-2;
+    }
+    a {
+        color: $color-4
+    }
+    article {
+        background-color: hsl(133, 76%, 34%);
+        padding: 10px;
+        p {
+            color: $color-1;
+        }
+        a {
+            color: $color-2;
+        }
+    }
+}
+
+
+footer {
+    h1 {
+        color: $color-2;
+    }
+    a {
+        color: $color-3;
+        font-size: 20px;
+    }
+}

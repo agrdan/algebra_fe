@@ -1,0 +1,53 @@
+$color-1: rgb(197, 83, 83);
+
+
+// if
+@if $color-1 == #c55353 {
+    body {
+        background-color: #c55353;
+    }
+}
+@else if $color-1 == #ee1 {
+    body {
+        background-color: #ee1;
+    }
+}
+@else {
+    body {
+        background-color: #53c575;
+    }
+}
+
+// for
+@for $i from 1 through 5 {
+    $width: $i * 100px;
+    .stavka-#{$i} {
+        width: $width;
+    }
+}
+
+li {
+    background-color: #333;
+    & a {
+        color: red;
+    }
+}
+
+$num: 1;
+
+@while $num <= 5 {
+    .stavka-#{$num}::after {
+        content: " #{$num}";
+        color: greenyellow;
+    }
+    $num: $num + 1;
+}
+
+// each
+$lista-korisnika: ana pero ivo tomo martina;
+
+@each $korisnik in $lista-korisnika {
+    .slika-#{$korisnik} {
+        background-image: url("slike/#{$korisnik}.jpg");
+    }
+}
