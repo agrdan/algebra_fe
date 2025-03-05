@@ -1,0 +1,61 @@
+$primaryColor: #fb8e00;
+$secondaryColor: #045fe7;
+$shadowColor: #505050;
+$backgroundColor: #f8f8f8;
+
+$primaryFont: 'Courier New', Courier, monospace;
+
+@mixin flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin setup {
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    margin: 0;
+    background-color: $backgroundColor;
+}
+
+@mixin set-flex-item($basis, $alignSelf, $textAlign, $fontSize, $display, $textColor, $textShadow, $animation) {
+    flex-basis: $basis;
+    align-self: $alignSelf;
+    text-align: $textAlign;
+    font-size: $fontSize;
+    display: $display;
+    color: $textColor;
+    text-shadow: #{$textShadow};
+    animation: #{$animation};
+}
+
+body {
+    @include setup();
+}
+
+main {
+    height: 100vh;
+    font-size: 22px;
+}
+
+section {
+    @include flex-container();
+    height: 100%;
+    h1 {
+        @include set-flex-item(100%, end, center, 4em, inline-block, $primaryColor, 4px 5px 2px $shadowColor, fadeIn 1.5s linear 1.5s backwards);
+    }
+    h3 {
+        @include set-flex-item(100%, start, center, 3em, inline-block, $secondaryColor, 2px 3px 2px $shadowColor, fadeIn 1.5s linear 3s backwards);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

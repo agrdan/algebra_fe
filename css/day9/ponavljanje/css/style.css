@@ -1,0 +1,49 @@
+body {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+main {
+  height: 100vh;
+  font-size: 22px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+section h1 {
+  flex-basis: 100%;
+  align-self: end;
+  text-align: center;
+  font-size: 4em;
+  display: inline-block;
+  color: #fb8e00;
+  text-shadow: 4px 5px 2px #505050;
+  animation: fadeIn 1.5s linear 1.5s backwards;
+}
+section h3 {
+  flex-basis: 100%;
+  align-self: start;
+  text-align: center;
+  font-size: 3em;
+  display: inline-block;
+  color: #045fe7;
+  text-shadow: 2px 3px 2px #505050;
+  animation: fadeIn 1.5s linear 3s backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
