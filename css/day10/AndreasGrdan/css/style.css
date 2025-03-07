@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: #e62c0b;
+  background: #333 url(../slike/blur-clean.jpg) no-repeat center center/cover fixed;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+  font-size: 10px;
+}
+main div {
+  border: 3px solid white;
+  flex-basis: 20%;
+  text-align: center;
+  font-size: 4em;
+  display: inline;
+  color: "white";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em 0.3em;
+  font-size: 10vw;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.5;
+}
+main div:nth-of-type(1) {
+  background-color: #656866;
+  animation: drop 1.5s linear 0.5s both;
+}
+main div:nth-of-type(2) {
+  background-color: #e62c0b;
+  animation: drop 1.5s linear 2s both;
+}
+main div:nth-of-type(3) {
+  background-color: #f0b002;
+  animation: drop 1.5s linear 3.5s both;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -40vh);
+  }
+  100% {
+    transform: translate(0, 30vh);
+  }
+}/*# sourceMappingURL=style.css.map */

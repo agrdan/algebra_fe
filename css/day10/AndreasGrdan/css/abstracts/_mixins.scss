@@ -1,0 +1,33 @@
+@mixin setup() {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $primaryFont;
+    font-size: 16px;
+    color: $secondaryColor;
+}
+
+@mixin flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin set-flex-item($basis, $textAlign, $fontSize, $display, $textColor) {
+    flex-basis: $basis;
+    text-align: $textAlign;
+    font-size: $fontSize;
+    display: $display;
+    color: $textColor;
+}
+
+@mixin border($size, $type, $color) {
+    border: #{$size} #{$type} #{$color};
+}
+
+@mixin setBackgroundImage($color, $url, $repeat, $position, $size, $attachment) {
+    background: #{$color} url(#{$url}) #{$repeat} #{$position}/#{$size} #{$attachment};
+}
+
+
+

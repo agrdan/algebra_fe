@@ -1,0 +1,48 @@
+@import "base/variables";
+@import "abstracts/mixins";
+
+
+body {
+    @include setup();
+    @include setBackgroundImage(#333, "../slike/blur-clean.jpg", "no-repeat", "center center", "cover", "fixed");
+}
+
+main {
+    @include flex-container();
+    align-items: center;
+    font-size: 10px;
+    
+    div {
+        @include border(3px, "solid", "white");
+        @include set-flex-item(20%, center, 4em, inline, "white");
+        @include flex-container();
+        padding: 0.5em 0.3em;
+        font-size: 10vw;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        opacity: 0.5;
+    }
+    & div:nth-of-type(1) {
+        background-color: $primaryColor;
+        animation: drop 1.5s linear 0.5s both;
+    }
+    & div:nth-of-type(2) {
+        background-color: $secondaryColor;
+        animation: drop 1.5s linear 2s both;
+    }
+    & div:nth-of-type(3) {
+        background-color: $tertiaryColor;
+        animation: drop 1.5s linear 3.5s both;
+    }
+}
+
+
+@keyframes drop {
+    0% {
+        transform: translate(0, -40vh);
+    }
+    100% {
+        transform: translate(0, 30vh);
+    }
+}
