@@ -21,7 +21,6 @@ if (z === 2) {
     x = 5;
 }
 
-
 write(`Drugi zadatak: ${x}`);
 
 for (let i = 1; i <= 20; i++) {
