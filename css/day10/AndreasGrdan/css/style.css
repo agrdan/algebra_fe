@@ -12,23 +12,18 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  align-items: center;
-  font-size: 10px;
+  height: 100vh;
 }
 main div {
   border: 3px solid white;
   flex-basis: 20%;
   text-align: center;
-  font-size: 4em;
-  display: inline;
-  color: "white";
+  font-size: 10vw;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5em 0.3em;
-  font-size: 10vw;
-  color: white;
-  text-align: center;
+  height: 15vw;
   font-weight: bold;
   opacity: 0.5;
 }
@@ -47,9 +42,9 @@ main div:nth-of-type(3) {
 
 @keyframes drop {
   0% {
-    transform: translate(0, -40vh);
+    transform: translate(0, -65vh);
   }
   100% {
-    transform: translate(0, 30vh);
+    transform: translate(0, 0);
   }
 }/*# sourceMappingURL=style.css.map */
