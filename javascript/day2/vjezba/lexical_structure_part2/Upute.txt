@@ -1,0 +1,5 @@
+1. Instalirajte Prettier - Code formatter plugin u VS Codu.
+
+2. Implementirajte automatsko formatiranje koda nad datotekom varijable.js. Usporedite sa rezultatima vaše prve vježbe.
+
+3. Provedite automatsko formatiranje koda nad datotekom program.js datotekom. Ispravite greške koje se javljaju.
