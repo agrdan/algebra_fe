@@ -9,20 +9,17 @@ body {
 
 main {
     @include flex-container();
-    align-items: center;
-    font-size: 10px;
+    height: 100vh;
     
     div {
         @include border(3px, "solid", "white");
-        @include set-flex-item(20%, center, 4em, inline, "white");
+        @include set-flex-item(20%, center, 10vw, null, white);
         @include flex-container();
-        padding: 0.5em 0.3em;
-        font-size: 10vw;
-        color: white;
-        text-align: center;
+        height: 15vw;
         font-weight: bold;
         opacity: 0.5;
     }
+
     & div:nth-of-type(1) {
         background-color: $primaryColor;
         animation: drop 1.5s linear 0.5s both;
@@ -40,9 +37,9 @@ main {
 
 @keyframes drop {
     0% {
-        transform: translate(0, -40vh);
+        transform: translate(0, -65vh);
     }
     100% {
-        transform: translate(0, 30vh);
+        transform: translate(0, 0);
     }
 }
