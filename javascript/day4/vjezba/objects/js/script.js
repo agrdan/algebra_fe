@@ -26,3 +26,17 @@ var automobil = {
         return this.boja;
     }
 }
+
+console.log(`Trenutna brzina automobila: ${automobil.brzina}`);
+console.log(`Brzina automobila nakon kocenja: ${automobil.zakoci(2)}`);
+console.log(`Brzina automobila nakon ubrzanja: ${automobil.ubrzaj(10)}`);
+
+for (let a in automobil) {
+    if (automobil.propertyIsEnumerable(a)) {
+        console.log(`${a}: ${automobil[a]}`);
+    }
+}
+
+automobil.promjeniBoju("crna");
+console.log(`Boja mog ${automobil.brend?.tip} automobila je ${automobil.boja}`);
+console.log(`Automobil: ${JSON.stringify(automobil)}`);

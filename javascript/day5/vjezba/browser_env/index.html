@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <title>Browser okolina</title>
+</head>
+<body onload="timeOne();clockOne();timeTwo()">
+    <header>
+        <h1>Browser okolina</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Trenutno vrijeme</h3>
+            <p id="sat1"></p>
+            <button type="button" onclick="stopClock()">Zaustavi sat</button>
+        </section>
+        <hr />
+        <section>
+            <h3>Trenutno vrijeme</h3>
+            <p id="sat2"></p>
+        </section>
+        <hr />
+        <section>
+            <h3>Interaktivne forme</h3>
+            <button type="button" onclick="sayHi()">Alert</button>
+            <button type="button" onclick="areYouReady()">Confirm</button>
+            <button type="button" onclick="rateUs()">Prompt</button>
+        </section>
+        <hr />
+        <section>
+            <h3>Upravljanje prozorom</h3>
+            <button type="button">Otvori prozor</button>
+            <button type="button">Zatvori prozor</button>
+        </section>
+        <hr />
+        <section>
+            <h3>Navigacija</h3>
+            <button type="button">Karakteristike zaslona</button>
+        </section>
+    </main>
+</body>
+</html>
