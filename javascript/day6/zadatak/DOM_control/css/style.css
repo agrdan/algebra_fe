@@ -1,0 +1,27 @@
+body{
+	margin: 20px;
+}
+
+.novi-stil-labela{
+	color: dodgerblue;
+	font-style: italic;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+
+.novi-stil-polja{
+	width: 300px;
+	font-size: 24px;
+	border: 1px solid dodgerblue;
+	box-shadow: 0 0 5px dodgerblue;
+	padding: 5px;
+	color: lightcoral;
+}
+
+#gumbic{
+	color: white;
+	background-color: dodgerblue;
+	font-size: 18px;
+	padding: 5px;
+	font-family: "times new roman";
+}

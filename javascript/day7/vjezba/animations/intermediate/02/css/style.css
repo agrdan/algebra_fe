@@ -1,0 +1,95 @@
+h1 {
+	text-align:center;
+}
+
+/* sekcija roditelj */
+.roditelj {
+	width: 600px;
+	margin: auto;
+	position: relative;
+}
+
+/* Sakrivanje sekcija sa slikama */
+.slike {
+	display: none;
+}
+
+/* Dimenzije slika */
+.slike img {
+	width: 100%;
+}
+
+/* Prijašnji i sljedeći gumbić */
+.prijasnji, .sljedeci {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.sljedeci {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prijasnji:hover, .sljedeci:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Podnaslov */
+.podnaslov  {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Broj slike (1/3 itd.) */
+.brojslike {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Gumbići -> navigacija */
+#navigacija{
+	text-align: center;
+}
+
+.gumbici {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.aktivni, .gumbici:hover {
+  background-color: #717171;
+}
+
+/* Animacija fadein */
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  0%{ opacity: 0.4; } 
+  100%{ opacity: 1; }
+}
+
+

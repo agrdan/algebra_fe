@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upravljanje DOM-om</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1 id="naslov">Upravljanje <i>DOM-om</i></h1>
+    </header>
+    <main>
+        <section>
+            <form onsubmit="return false">
+                <label><strong>Vaše mišljenje o JavaScript jeziku:</strong></label><br />
+                <textarea name="vase-misljenje" rows="6" cols="24"></textarea><br />
+            </form>
+            <hr />
+            <button>Dodaj novi element</button>
+            <button>Ukloni element</button>
+            <button>Promijeni vrijednosti atributa</button>
+            <button>Promijeni sadržaj</button>
+            <button>Promijeni inline stil</button>
+            <button>Promijeni stil preko klase</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

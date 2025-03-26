@@ -18,6 +18,7 @@ function timeOne() {
 var intervalId;
 
 function clockOne() {
+    // window.setInterval(); 
     intervalId = setInterval(timeOne, 1000);
 }
 
@@ -50,4 +51,27 @@ function rateUs() {
     } else {
         alert("Rate us next time!");
     }
+}
+
+var prozor;
+function openWindow() {
+    prozor = open("https://algebra.hr/");
+}
+
+
+function closeWindow() {
+    if (!prozor || prozor.closed) {
+        alert("Window was not open at all, or its already closed!");
+    } else {
+        prozor.close();
+    }
+}
+
+function zaslon() {
+    // window.location.href
+    location.href = "karakteristike-zaslona.html";
+}
+
+function natrag() {
+    history.back();
 }
