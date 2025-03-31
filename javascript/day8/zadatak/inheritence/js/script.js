@@ -27,7 +27,7 @@ function Boat(manufacturer, model, price, tax, speedInKnots, maxWeight, length) 
     this.length = length;
 
     this.calcualteSpeedInKMH = function() {
-        return this.speedInKnots * 1.85;
+        return (this.speedInKnots * 1.85).toFixed(2);
     }
 }
 
