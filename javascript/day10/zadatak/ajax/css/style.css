@@ -1,0 +1,23 @@
+body {
+    width: 99vw;
+}
+
+#users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-item {
+    flex-basis: 24%;
+    border: 1px solid black;
+    margin: 5px 5px;
+}
+
+.user-img {
+    height: 100px;
+    width: auto;
+}
+
+.align-center {
+    text-align: center;
+}
