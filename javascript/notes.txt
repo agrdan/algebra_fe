@@ -2,3 +2,5 @@ gulp - automatizacija taskova
 jshint - linter
 loadash - napredni tipovi podataka
 bable - transpajler
+
+testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x)
