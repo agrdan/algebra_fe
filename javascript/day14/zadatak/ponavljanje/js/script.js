@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearFromInput = document.getElementById("start-year");
     const yearToInput = document.getElementById("end-year");
     const moviesContainer = document.getElementById("movies");
+    const errorContainer = document.getElementById("error");
     document.getElementById("btn-search").addEventListener("click", () => {
         getData();
     });
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const getData = () => {
-        
+        moviesContainer.innerHTML = "";
         const yearFrom = yearFromInput.value;
         const yearTo = yearToInput.value;
 
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`to: ${yearTo}`);
 
         if (yearFrom.trim().length > 0 && yearTo.trim().length > 0) {
-            fetch(`https://frodo.ess.hr/api/ponavljanje/filmovi-json.php?godinamin=${yearFrom}&godinamax=${yearTo}`)
+            fetch(`https://frodo.ess.hr/api/ponavljanje/filmovijson.php?godinamin=${yearFrom}&godinamax=${yearTo}`)
             .then(r => r.json())
             .then(handleResponse)
             .catch(handleError);
@@ -39,8 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleResponse = (data) => {
         console.log(data);
         if (data.length == 0) {
-            moviesContainer.innerHTML = "There is no movies between specified years!";
+            errorContainer.innerHTML = "<div class=\"error\">There is no movies between specified years!<div>";
+            moviesContainer.innerHTML = "";
         } else {
+            errorContainer.innerHTML = "";
             Array.from(data).forEach(user => {
                 moviesContainer.innerHTML += createItem(user);
             })
@@ -50,8 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const handleError = (error) => {
-        alert(error.toString());
+        errorContainer.innerHTML = `<div class=\"error\">${error.toString()}<div>`;
     }
-
-
-})
+});
