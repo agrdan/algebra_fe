@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS parcijalni AG</title>
+</head>
+<body>
+    <div id="loader"></div>
+    <main id="main-screen" class="hide">
+        <div class="search-area">
+            <h2>Filter by book authors</h2>
+            <select id="dropdown-menu">
+                <option value="0">Select author</option>
+                <option value="1">Ivana Brlić-Mažuranić</option>
+                <option value="2">August Šenoa</option>
+                <option value="3">Miroslav Krleža</option>
+                <option value="4">Miro Gavran</option>
+                <option value="5">Mato Lovrak</option>
+                <option value="6">Vladimir Nazor</option>
+            </select>
+        </div>
+        
+        <div id="error" class="align">        
+        </div>
+    
+        <div class="item-container" id="books">
+        </div>
+    
+        <footer id="total-price" class="hide">
+        </footer>    
+    </main>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

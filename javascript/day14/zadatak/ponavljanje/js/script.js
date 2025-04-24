@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`to: ${yearTo}`);
 
         if (yearFrom.trim().length > 0 && yearTo.trim().length > 0) {
-            fetch(`https://frodo.ess.hr/api/ponavljanje/filmovijson.php?godinamin=${yearFrom}&godinamax=${yearTo}`)
+            fetch(`https://frodo.ess.hr/api/ponavljanje/filmovi-json.php?godinamin=${yearFrom}&godinamax=${yearTo}`)
             .then(r => r.json())
             .then(handleResponse)
             .catch(handleError);
