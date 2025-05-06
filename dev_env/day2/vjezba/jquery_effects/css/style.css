@@ -1,0 +1,23 @@
+section{
+	min-height: 220px;
+	border-bottom: 3px double gray;
+}
+
+section div{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+#sekcija4 div, #sekcija5 div{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+/* tekst koji će se u sklopu rada animacije naknadno prikazati početno skrivamo */
+#sekcija4 div p:nth-child(2), #sekcija5 div p:nth-child(2){
+	display: none;
+}

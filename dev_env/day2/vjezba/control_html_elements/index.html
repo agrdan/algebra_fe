@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - upravljanje HTML elementima i atributima</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main>
+        <section id="sekcija1">
+            <h1>Dohvaćanje sadržaja i vrijednosti atributa - text(), html(), val(), attr()</h1>
+            <form>
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Dohvati sadržaj elementa</button>
+            <button>Dohvati sadržaj + HTML</button>
+            <button>Dohvati vrijednost polja</button>
+            <button>Dohvati vrijednost atributa</button>
+            <br /><br />
+        </section>
+        <section id="sekcija2">
+            <h1>Postavljanje sadržaja i vrijednosti atributa - text(), html(), val(), attr()</h1>
+            <form>
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24">Neki tekst ...</textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Promijeni sadržaj elementa "label"</button>
+            <button>Promijeni sadržaj + HTML elementa "label"</button>
+            <button>Promijeni vrijednost polja "textarea"</button>
+            <button>Promijeni vrijednost atributa "rows" i "cols" elementa "textarea"</button>
+            <br /><br />
+        </section>
+        <section id="sekcija3">
+            <h1>Dodavanje novog sadržaja ili HTML elemenata - prepend(), append(), before(), after()</h1>
+            <form>
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Dodaj sadržaj na početak elementa "label"</button>
+            <button>Dodaj HTML element na kraj elementa "label"</button>
+            <button>Dodaj HTML elementa prije elementa "input"</button>
+            <button>Dodaj HTML elementa iza elementa "input"</button>
+            <br /><br />
+        </section>
+        <section id="sekcija4">
+            <h1>Uklanjanje sadržaja ili HTML elemenata - remove(), empty()</h1>
+            <form id="obrazac1">
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <form id="obrazac2">
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Ukloni prvi element "form" i njegove podelemente</button>
+            <button>Ukloni podelemente drugog elementa "form"</button>
+            <br /><br />
+        </section>
+        <section id="sekcija5">
+            <h1>Promjena stilova preko klase - addClass(), removeClass(), toggleClass()</h1>
+            <form>
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Promijeni stil dodavanjem klase</button>
+            <button>Vrati početni stil uklanjanjem klase</button>
+            <button>Naizmjenično mijenjaj still preko klase</button>
+            <br /><br />
+        </section>
+        <section id="sekcija6">
+            <h1>Promjena stilova preko atributa style - css()</h1>
+            <form>
+                <label><strong>Vaše mišljenje o jQuery-u:</strong></label><br />
+                <textarea name="vase_misljenje" rows="6" cols="24"></textarea><br />
+                <input type="submit" value="U redu" />
+            </form>
+            <br />
+            <button>Promijeni jedan stil preko atributa style</button>
+            <button>Promijeni više stilova preko atributa style</button>
+            <br /><br />
+        </section>
+    </main>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

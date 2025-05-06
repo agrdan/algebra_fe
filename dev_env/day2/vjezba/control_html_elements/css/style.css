@@ -1,0 +1,17 @@
+section{
+	min-height: 220px;
+	border-bottom: 3px double gray;
+}
+
+section form{
+	min-height: 150px;
+	width: 50%;
+	background-color: silver;
+	padding: 5px;
+}
+
+/* klasa preko koje dinamički dajemo HTML elementima novi stil */
+/* korištena u metodama addClass(), removeClass(), toggleClass() */
+.nova-pozadina{
+	background-color: red;
+}
