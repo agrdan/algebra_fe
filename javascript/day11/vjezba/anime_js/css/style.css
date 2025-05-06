@@ -1,0 +1,119 @@
+ /*primjer 1 */
+#zeleni-kvadrat {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+/*primjer 2 */
+#roditelj-kugla {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 2px;
+    height: 150px;
+    border-radius: 5px;
+    transform-origin: 50% 0%;
+    transform: rotate(60deg);
+    background-color: green;
+}
+
+#pivot {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#kugla {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+/* primjer 3 */
+.segment {
+    width: 0;
+    height: 25px;
+    background-color: lime;
+    float: left;
+}
+
+#baterija {
+    width: 60px;
+    height: 25px;
+    border: solid grey 5px;
+    float: left;
+}
+
+#glava {
+    width: 5px;
+    height: 15px;
+    margin-top: 10px;
+    background-color: grey;
+    float: left;
+}
+
+#napredak {
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main > section:nth-of-type(3)::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* primjer 4 */
+#roditelj-kutija{
+    position: relative;
+    min-height: 200px;
+}
+
+#kutija, #sadrzaj {
+    width: 50px;
+    height: 50px;
+    top: 70px;
+    left: 70px;
+    background-color: green;
+    position: absolute;
+}
+
+#kutija {
+    background-color: lightgreen;
+    border: 3px solid darkorange;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
+/* primjer 5 */
+#roditelj-lopta{
+    min-height: 200px;
+}
+
+#roditeljlopta::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.lopta {
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: rgb(128, 128, 128);
+    float: left;
+}
