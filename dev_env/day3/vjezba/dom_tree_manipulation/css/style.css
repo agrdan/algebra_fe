@@ -1,0 +1,15 @@
+*{
+	background-color: rgb(255,255,255);
+}
+
+#pocetak, #pocetak *{
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid red;
+	color: red;
+}
+
+#polaziste{
+	border: 2px solid gray;
+	color: gray;
+}

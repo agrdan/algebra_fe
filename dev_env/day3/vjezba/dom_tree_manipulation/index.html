@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery - kretanje kroz DOM stablo</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>Pradjed (body)
+		<main id="pocetak">Djed
+			<section>Roditelj
+				<article>
+					Brat
+				</article>
+				<article id="polaziste">Polazište
+					<div>
+						Dijete
+					</div>
+					<div>Dijete
+						<p>Unuk</p>
+						<p>Unuk</p>
+					</div>
+					<div>
+						Dijete
+					</div>
+				</article>
+				<aside>
+					Brat
+				</aside>
+			</section>
+		</main>
+		<!-- s elementima iznad manipuliramo (dinamički im mijenjamo pozadinsku boju) => elemente dohvaćamo pomoću jQuery metoda za kretanje kroz DOM (HTML) stablo -->
+		<!-- polazišni element je <article> s ID-om "polaziste" (osim za posljednju sekciju s ID-om "sekcija4" (Filtriranje elemenata), gdje se ne koristi polazišni element) -->
+		
+		<!-- sekcije s gumbićima za poziv pojedinih funkcija -->
+		<section id="sekcija1">
+			<h1>Dohvaćanje elemenata predaka - parent(), parentsUntil(), parents()</h1>
+				<button>Dohvati izravnog pretka</button>
+				<button>Dohvati sve pretke do zadanog elementa</button>
+				<button>Dohvati sve pretke (do elementa html)</button>
+				<hr />
+		</section>
+		<section id="sekcija2">
+			<h1>Dohvaćanje elemenata potomaka - children(), find()</h1>
+				<button>Dohvati izravnog potomka</button>
+				<button>Dohvati sve potomke</button>
+				<button>Dohvati sve potomke određenog tipa</button>
+				<hr />
+		</section>
+		<section id="sekcija3">
+			<h1>Dohvaćanje elemenata s istim roditeljom (braća) - next(), prev(), siblings()</h1>
+				<button>Dohvati sljedećeg brata</button>
+				<button>Dohvati prethodnog brata</button>
+				<button>Dohvati svu braću</button>
+				<button>Dohvati svu braću određenog tipa</button>
+				<hr />
+		</section>
+		<section id="sekcija4">
+			<h1>Filtriranje elemenata - first(), last(), eq(), filter(), not()</h1>
+				<button>Dohvati prvi element određenog tipa</button>
+				<button>Dohvati posljednji element određenog tipa</button>
+				<button>Dohvati element na zadanoj poziciji</button>
+				<button>Dohvati element koji ispunjava zadani kriterij</button>
+				<button>Dohvati element koji ne ispunjava zadani kriterij</button>
+				<hr />
+		</section>
+		<!-- dohvaćanje lokalno pohranjene biblioteke iz mape "js" => standardna (osnovna) jQuery biblioteka -->
+		<script src="js/jquery-3.7.0.js"></script>
+		<!-- dohvaćanje naše skripte unutar koje koristimo jQuery metode => pozivamo je nakon što smo dohvatili jQuery biblioteke -->
+		<script src="js/script.js"></script>
+	</body>
+</html>

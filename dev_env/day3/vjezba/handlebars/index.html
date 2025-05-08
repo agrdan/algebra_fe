@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow pokemons</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <!-- template definition -->
+    <script id="pokemon-lista" type="text/x-handlebars-template">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+            </tr>
+            {{ #each pokemon }}
+                <td>{{ zbroj @index 1}}</td>
+                <td><a href="{{this.url}}" target="_blank">{{this.name}}</a></td>
+            {{ /each }}
+        </table>
+    </script>
+
+    <!-- Embedd generated data in HTML -->
+    <div id="rezultat"></div>
+</body>
+</html>
