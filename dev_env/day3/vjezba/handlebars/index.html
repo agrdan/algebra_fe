@@ -16,10 +16,12 @@
                 <th>#</th>
                 <th>Name</th>
             </tr>
-            {{ #each pokemon }}
-                <td>{{ zbroj @index 1}}</td>
+            {{#each pokemon}}
+            <tr>
+                <td>{{zbroj @index 1}}</td>
                 <td><a href="{{this.url}}" target="_blank">{{this.name}}</a></td>
-            {{ /each }}
+            </tr>
+            {{/each}}
         </table>
     </script>
 

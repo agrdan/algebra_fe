@@ -8,10 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const output = Handlebars.compile(template);
         console.log(data.pokemon_species);
         const entryData = {
-            "pokemon": data.pokemon_species.slice(0, 20)
+            pokemon: data.pokemon_species.slice(0, 20),
+            tableClass: "table table-dark table-striped"
         };
         const html = output(entryData);
         document.getElementById("rezultat").innerHTML = html;
+
+        $('[data-bs-toggle="popover"]').popover();
     }
 
     xhttp.onreadystatechange = function() {
